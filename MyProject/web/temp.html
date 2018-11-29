@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+   "Time:"+ h + "h:" + m + "m:" + s + "s";
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+function expand(x) {
+
+x.style.width= "120px";
+  x.style.height= "120px"; }
+  
+ function notexp(x) {
+
+  x.style.width= "77px";
+  x.style.height= "77px"; }
+  
+  function color (x) {
+  style="background-color:PaleGreen"
+    color:black;
+  }
+  
+  function default1 (x) {
+  
+  style="background-color:PaleGreen"
+}
+
+</script>
+
+</head>
+
+<body background="images\bg-6-full.jpg">
+<body onload="startTime()">
+
+    
+    <div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<button class="login100-form-btn">
+								<a href="LogoutServlet"  >Logout</a>
+							</button>
+						</div>
+</div>
+    
+    
+<div align="right" id="txt"> </div>
+
+<marquee scrollamount="10" style="border:#B9CC20 3px SOLID" onmouseover="this.stop();" onmouseout="this.start();" >Latest Announcements are being displayed here!!</marquee>
+
+
+
+<p><img  src="images\clever-owl.png" width="77" height="77" align="right"></p>
+
+<a href="temp.html">
+<img onmouseover="expand(this)" onmouseout="notexp(this)" src="images\amplifyworks-logo.svg" width="84"height="84"></a>
+
+<font face="sans-serif"  size="12" color="#24CBF0">Welcome </font>
+<font face="sans-serif"  size="8" color="#1EBD39">DBA!</font>
+
+
+
+<object width="1500" height="50" data="images\twineblue.png"></object>
+<br>
+<br>
+
+ 
+<center>
+
+<div onmouseover="color(this)" onmouseout="default1(this)"  id="btn1">
+<a onmouseover="color(this)" onmouseout="default1(this)" href="temp.html" >HOME</a>
+
+<a onmouseover="color(this)" onmouseout="default1(this)" href="https://www.quora.com/profile/Milan-Bhardwaj-3"></a>
+
+<a onmouseover="color(this)" onmouseout="default1(this)" href="dbaops.html" >Data Base Management</a>
+
+<a onmouseover="color(this)" onmouseout="default1(this)" href="admin_setques.html">Create Test</a>
+
+<a onmouseover="color(this)" onmouseout="default1(this)" href="#">---</a>
+
+<a onmouseover="color(this)" onmouseout="default1(this)" href="#">---</a>
+
+</center></div>
+<br><br> 
+<br><br> <br><br> <br><br> <br><br> 
+
+
+<center>
+<hr id="line1">
+<dfn  title="Created by Milan Bhardwaj, a full-fledged content writer!!"><font color="Blue" size="3">Move the cursor here for more info</dfn>
+</hr>
+<br>
+
+Visit us at
+Chitkara University<br>
+HP
+<br><br><br><br>
+<embed src="C:\Users\Milan\Documents\NetBeansProjects\MyProject\web\images\do-you-vespa-3306.mp3" align="right" autostart="true"  height="50" width="150" />
+</address></center>
+</body>
+</html>
